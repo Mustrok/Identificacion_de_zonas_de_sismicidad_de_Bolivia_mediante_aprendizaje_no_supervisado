@@ -1,0 +1,22 @@
+\begin{tabular}{lp{6cm}}
+\toprule
+Parametro & Valor \\
+\midrule
+Fuente de datos & USGS Earthquake Hazards Program (API FDSN) \\
+Ventana temporal & 1900-01-01 a 2026-09-30 \\
+Caja envolvente (latitud) & -23.0 a -9.6 \\
+Caja envolvente (longitud) & -69.7 a -57.4 \\
+Magnitud minima de descarga & 3.0 \\
+Magnitud minima de modelado & 4.0 \\
+Variables de agrupamiento & Latitud, longitud, profundidad (km) \\
+Estandarizacion & StandardScaler \\
+Modelo linea base & K-Means con 10 inicializaciones \\
+Modelo competitivo & Agrupamiento jerarquico (Ward) \\
+Seleccion de K & Maximo del indice de silueta \\
+Numero de zonas (K) & 4 \\
+Numeracion de zonas & Canonica, por profundidad media decreciente \\
+Alineacion de particiones & Emparejamiento optimo (algoritmo hungaro) \\
+Semilla aleatoria & 42 \\
+Adjusted Rand Index (ARI) & 0.9048 \\
+\bottomrule
+\end{tabular}
